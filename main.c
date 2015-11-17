@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
         if(strcmp(str, "exit") == 0)
             break;
 
-        if(1 == contaisString(tree, str, strlen(str)))
+        if(1 == containsString(tree, str, strlen(str)))
             printf("YES\r\n");
         else
             printf("NO\r\n");
@@ -43,12 +43,12 @@ void prefixTreeSample()
     insertString(prefixTree, "fved", 4);
     insertString(prefixTree, "vcefd", 5);
 
-    if(1 == contaisString(prefixTree, "abcd", 4))
+    if(1 == containsString(prefixTree, "abcd", 4))
         printf("Contain 'abcd'\r\n");
     else
         printf("NO 'abcd'\r\n");
 
-    if(1 == contaisString(prefixTree, "abc", 3))
+    if(1 == containsString(prefixTree, "abc", 3))
         printf("Contain 'abc'\r\n");
     else
         printf("NO 'abc'\r\n");

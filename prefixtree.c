@@ -71,7 +71,7 @@ void insertString(struct PrefixTree *tree, const char *str, int strLength)
     free(subtractedString);
 }
 
-char contaisString(struct PrefixTree *tree, const char *str, int strLength)
+char containsString(struct PrefixTree *tree, const char *str, int strLength)
 {
     char *subtractedString = subtracFromString(str, strLength, tree->minValue);
 

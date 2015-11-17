@@ -20,6 +20,6 @@ struct PrefixTree
 struct PrefixTree *createPrefixTree(int minValue, int maxValue);
 void deletePrefixTree(struct PrefixTree *tree);
 void insertString(struct PrefixTree *tree, const char *str, int strLength);
-char contaisString(struct PrefixTree *tree, const char *str, int strLength);
+char containsString(struct PrefixTree *tree, const char *str, int strLength);
 
 #endif // PREFIXTREE_H
